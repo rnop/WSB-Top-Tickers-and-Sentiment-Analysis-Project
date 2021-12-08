@@ -89,9 +89,11 @@ def get_daily_discussion_urls(subreddit, before_date, after_date):
   return urls_df
 
 # Scrape Comments Using Submission URLs
-def get_comments(urls_df):
-  reddit = praw.Reddit(client_id='N377Ru8Wm4bQ0A', client_secret='sZXrsKN2kMF_c7bayfZQKZQCTAk', user_agent='monk3ywhisper', check_for_async=False)
-  
+def get_comments(urls_df, reddit_creds):
+  '''
+  Input your Reddit API credentials here in the form:
+  reddit_creds = praw.Reddit(client_id='***', client_secret='***', user_agent='***', check_for_async=False)
+  '''
   comments_by_submission = []
   for url in urls_df['url'].tolist():
     try:
