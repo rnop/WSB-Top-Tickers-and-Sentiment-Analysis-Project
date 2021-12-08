@@ -1,3 +1,5 @@
+!pip install praw==7.5.0
+
 import pandas as pd
 import praw 
 import re 
@@ -85,7 +87,7 @@ def get_comments(urls_df, reddit_creds):
   for url in urls_df['url'].tolist():
     try:
       comments = []
-      submission = reddit.submission(url=url)
+      submission = reddit_creds.submission(url=url)
       submission.comments.replace_more(limit=5)
       for comment in submission.comments.list():
           comments.append(comment.body)
