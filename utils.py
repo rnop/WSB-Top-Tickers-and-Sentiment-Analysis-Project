@@ -1,5 +1,3 @@
-!pip install praw==7.5.0
-
 import pandas as pd
 import praw 
 import re 
