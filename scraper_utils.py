@@ -6,6 +6,10 @@ import json
 import csv
 import time
 import datetime
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+import matplotlib.pyplot as plt
+import seaborn as sns
+sns.set_style('darkgrid')
 
 def get_unix_timestamp(date_string):
   '''
