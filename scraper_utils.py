@@ -200,7 +200,7 @@ def get_vader_sentiment(comments_df):
   comments_df['vader_sentiment_label'] = vader_label
   return comments_df
 
-def most_mentioned_stocks(comments, period):
+def most_mentioned_stocks(comments_df, period):
   '''
   Counts the most mentioned stocks on WSB given a specific time period.
   Period: ['Yearly', 'Monthly', 'Weekly','Daily']
