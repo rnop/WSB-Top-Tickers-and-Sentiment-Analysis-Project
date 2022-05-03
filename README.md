@@ -1,23 +1,29 @@
 # WSB-Top-Tickers-and-Sentiment-Analysis-Project
 
+<a href="https://github.com/rnop/WSB-Top-Tickers-and-Sentiment-Analysis-Project/blob/main/Social%20Media%20Sentiment%20of%20Financial%20Groups.pdf" target="_blank">Research Paper (PDF)</a>
+
 ### Introduction
-r/WallStreetBets is a famous trading community on Reddit consisting of over 11 million users (as of Dec 2021). With so many users, it is very time consuming to parse through the subreddit and look at the hundreds of different posts and comments generated everyday. Therefore, the goal of this project was to efficiently automate this process to extract the most popularly discussed stocks and compute the sentiment of those stocks. 
+The following project looks to build an efficient pipeline that scrapes, pre-processes, and extracts sentiment from social media comments from r/WallStreetBets. Social media sentiment will be computed using traditional machine learning models, a rule-based lexicon model, and lastly, pre-trained and fine-tuned transformer models. The end goal is build an automated, efficient, and accurate sentiment pipeline that visualizes the daily, weekly, and monthly sentiment of popular stocks and major stock market indices.  
 
 ![alt text](https://github.com/rnop/WSB-Top-Tickers-and-Sentiment-Analysis-Project/blob/main/top_mentions.png)
 ![alt text](https://github.com/rnop/WSB-Top-Tickers-and-Sentiment-Analysis-Project/blob/main/GME_sentiment.png)
 
-### Main Libraries
-* python
+### Python Libraries
+* numpy
 * pandas
 * matplotlib
 * seaborn
 * datetime
 * praw (7.5.0)
+* scipy
+* sklearn
 * transformers (4.13.0)
 * emojis
 * vaderSentiment
 
-### Step-By-Step Process
-1. Scrape Reddit Comments and Stock Tickers
-2. Compute the Most Popularly Discussed Stocks and Their Overall Sentiment
-3. Visualize the Daily, Weekly, Monthly, and Yearly Sentiment of Stocks
+### Automated Sentiment Pipeline
+1. Scrape Reddit comments
+2. Pre-process comments
+3. Serve to model endpoints to classify sentiment (Positive, Neutral, Negative)
+4. Aggregate sentiment across individual tickers and major indices
+5. Visualize daily, weekly, monthly sentiment 
