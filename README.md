@@ -1,6 +1,6 @@
 # WSB-Top-Tickers-and-Sentiment-Analysis-Project
 
-<a href="https://github.com/rnop/WSB-Top-Tickers-and-Sentiment-Analysis-Project/blob/main/Social%20Media%20Sentiment%20of%20Financial%20Groups.pdf" target="_blank">Research Paper (PDF)</a>
+<a href="https://github.com/rnop/WSB-Top-Tickers-and-Sentiment-Analysis-Project/blob/main/Social%20Media%20Sentiment%20of%20Financial%20Groups.pdf" target="_blank">Research Paper (PDF) for Stanford Natural Language Understing Course CS224U</a>
 
 ### Introduction
 The following project looks to build an efficient pipeline that scrapes, pre-processes, and extracts sentiment from social media comments from r/WallStreetBets. Social media sentiment will be computed using traditional machine learning models, a rule-based lexicon model, and lastly, pre-trained and fine-tuned transformer models. The end goal is build an automated, efficient, and accurate sentiment pipeline that visualizes the daily, weekly, and monthly sentiment of popular stocks and major stock market indices.  
